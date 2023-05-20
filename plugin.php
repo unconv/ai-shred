@@ -137,7 +137,7 @@ add_action( "woocommerce_after_register_post_type", function() {
 
         $pdf_file = create_pdf( $response );
 
-        $product_id = absint( $_POST['product_id'] );
+        $product_id = absint( $_POST['ai_product'] );
         $order->add_meta_data( "_aishred_plan_" . $product_id, $pdf_file, true );
         $order->add_meta_data( "_aishred_plan_generated_" . $product_id, "yes", true );
         $order->save();
