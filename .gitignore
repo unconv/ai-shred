@@ -1,0 +1,4 @@
+pdfs/*
+!pdfs/index.php
+settings.php
+vendor/
